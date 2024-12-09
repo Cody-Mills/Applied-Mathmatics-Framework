@@ -610,6 +610,22 @@ void DX11PhysicsFramework::Update()
 	{
 		_gameObjects[2]->Move(XMFLOAT3(0, 0, 0.02f));
 	}
+	if (GetAsyncKeyState('5'))
+	{
+		_gameObjects[3]->Move(XMFLOAT3(0, 0, -0.02f));
+	}
+	if (GetAsyncKeyState('6'))
+	{
+		_gameObjects[3]->Move(XMFLOAT3(0, 0, 0.02f));
+	}
+	if (GetAsyncKeyState('7'))
+	{
+		_gameObjects[4]->Move(XMFLOAT3(0, 0, -0.02f));
+	}
+	if (GetAsyncKeyState('8'))
+	{
+		_gameObjects[4]->Move(XMFLOAT3(0, 0, 0.02f));
+	}
 	// Update camera
 	float angleAroundZ = XMConvertToRadians(_cameraOrbitAngleXZ);
 

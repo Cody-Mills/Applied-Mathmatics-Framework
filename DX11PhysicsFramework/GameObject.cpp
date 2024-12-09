@@ -33,13 +33,6 @@ void GameObject::Update(float dt)
 	}
 }
 
-void GameObject::Move(XMFLOAT3 direction)
-{
-	_position.x += direction.x;
-	_position.y += direction.y;
-	_position.z += direction.z;
-}
-
 void GameObject::Draw(ID3D11DeviceContext * pImmediateContext)
 {
 	// We are assuming that the constant buffers and all other draw setup has already taken place
