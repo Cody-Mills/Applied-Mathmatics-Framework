@@ -13,6 +13,8 @@ private:
 	XMFLOAT3 _scale;
 
 public:
+	Transform();
+	~Transform();
 	void SetPosition(XMFLOAT3 position) { _position = position; }
 	XMFLOAT3 GetPosition() const { return _position; }
 
@@ -22,5 +24,5 @@ public:
 	void SetScale(XMFLOAT3 scale) { _scale = scale; }
 	XMFLOAT3 GetScale() const { return _scale; }
 
-	void Move(XMFLOAT3 direction);
+
 };
