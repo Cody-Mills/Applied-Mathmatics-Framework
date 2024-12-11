@@ -43,9 +43,10 @@ public:
 	void SetTextureRV(ID3D11ShaderResourceView * textureRV) { _textureRV = textureRV; }
 	ID3D11ShaderResourceView* const* GetTextureRV() { return &_textureRV; }
 	bool HasTexture() const { return _textureRV ? true : false; }
-
+	void Move(XMFLOAT3 direction);
 	void Update(float dt);
 	void Draw(ID3D11DeviceContext * pImmediateContext);
+	Transform* GetTransform() { return _transform; }
 
 private:
 	GameObject* _parent = nullptr;
@@ -55,7 +56,8 @@ private:
 
 	Geometry _geometry;
 	Material _material;
-
+	//Reference to _transform
+	Transform* _transform = new Transform;
 	ID3D11ShaderResourceView* _textureRV = nullptr;
 };
 

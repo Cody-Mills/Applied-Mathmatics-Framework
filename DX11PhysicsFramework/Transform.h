@@ -13,14 +13,16 @@ private:
 	XMFLOAT3 _scale;
 
 public:
-	void SetPosition(XMFLOAT3 position) { _position = position; }
-	XMFLOAT3 GetPosition() const { return _position; }
+	Transform();
+	~Transform();
 
-	void SetRotation(XMFLOAT3 rotation) { _rotation = rotation; }
+	void SetPosition(float x, float y, float z) { _position.x = x; _position.y = y; _position.z = z; }
+	XMFLOAT3 GetPosition() const { return _position;  }
+
+	void SetRotation(float x, float y, float z) { _rotation.x = x; _rotation.y = y; _rotation.z = z; }
 	XMFLOAT3 GetRotation() const { return _rotation; }
 
-	void SetScale(XMFLOAT3 scale) { _scale = scale; }
+	void SetScale(float x, float y, float z) { _scale.x = x; _scale.y = y; _scale.z = z; }
 	XMFLOAT3 GetScale() const { return _scale; }
 
-	void Move(XMFLOAT3 direction);
 };
