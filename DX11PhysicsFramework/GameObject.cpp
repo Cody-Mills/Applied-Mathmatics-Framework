@@ -1,9 +1,8 @@
 #include "GameObject.h"
 
-GameObject::GameObject(string type, Appearance* appearance)
+GameObject::GameObject(string type, Appearance* appearance) : _type(type), _appearance(appearance)
 {
 	_parent = nullptr;
-	_appearance->GetTextureRV();
 }
 
 GameObject::~GameObject()

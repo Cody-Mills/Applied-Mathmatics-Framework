@@ -26,7 +26,7 @@ struct Material
 class Appearance
 {
 public:
-	Appearance();
+	Appearance(Geometry geometry, Material material);
 	~Appearance();
 	Geometry GetGeometryData() const { return _geometry; }
 	Material GetMaterial() const { return _material; }

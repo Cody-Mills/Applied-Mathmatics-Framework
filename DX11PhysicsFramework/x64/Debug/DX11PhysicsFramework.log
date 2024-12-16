@@ -1,3 +1,9 @@
-﻿  GameObject.cpp
-E:\Classwork\Year 2\Applied Mathmatics\Applied-Mathmatics-Framework\DX11PhysicsFramework\GameObject.cpp(18,31): warning C4100: 'dt': unreferenced formal parameter
-  DX11PhysicsFramework.vcxproj -> E:\Classwork\Year 2\Applied Mathmatics\Applied-Mathmatics-Framework\x64\Debug\DX11PhysicsFramework.exe
+﻿  Appearance.cpp
+  DX11PhysicsFramework.cpp
+C:\Users\m015702n\Documents\GitHub\Applied-Mathmatics-Framework\DX11PhysicsFramework\DX11PhysicsFramework.cpp(84,75): warning C4100: 'nCmdShow': unreferenced formal parameter
+C:\Users\m015702n\Documents\GitHub\Applied-Mathmatics-Framework\DX11PhysicsFramework\DX11PhysicsFramework.cpp(441,31): warning C4305: '=': truncation from 'int' to 'FLOAT'
+  GameObject.cpp
+C:\Users\m015702n\Documents\GitHub\Applied-Mathmatics-Framework\DX11PhysicsFramework\GameObject.cpp(13,31): warning C4100: 'dt': unreferenced formal parameter
+  Main.cpp
+  Generating Code...
+  DX11PhysicsFramework.vcxproj -> C:\Users\m015702n\Documents\GitHub\Applied-Mathmatics-Framework\x64\Debug\DX11PhysicsFramework.exe

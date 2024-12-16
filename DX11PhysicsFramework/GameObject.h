@@ -36,6 +36,6 @@ private:
 	XMFLOAT4X4 _world;
 
 	Transform* _transform = new Transform;
-	Appearance* _appearance = new Appearance;
+	Appearance* _appearance;
 };
 
